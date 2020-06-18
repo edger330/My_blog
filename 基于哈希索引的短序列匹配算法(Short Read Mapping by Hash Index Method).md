@@ -125,7 +125,7 @@
 
 >### A.排序建表(*Sorting*)
 >
->![桶排序](./img/5791357-2bf666e568ae71e2.png?raw=true)
+>![桶排序](https://github.com/edger330/My_blog/tree/master/img/5791357-2bf666e568ae71e2.png?raw=true)
 >
 >由上图所示，对于长度为100bp的short read片段，其存储方式为1个bp使用3bit二进制数据存储，故其长度为100 x 3b(b表示为bit)，同时传入到该模块的还有24bit长度的short read ID，该ID用来唯一标识该short read。
 >
@@ -145,7 +145,7 @@
 >
 >### B.Key值并行比较(*Parallel Key Comparison*)
 >
->![比较器阵列](./img/5791357-f7adb3d3d8ace85d.png?raw=true)
+>![比较器阵列](https://github.com/edger330/My_blog/tree/master/img/5791357-f7adb3d3d8ace85d.png?raw=true)
 >
 >由上图所示，Key1表示short read中产生的Key，Key2表示由reference生成的CAL表中的Key。匹配时第一次匹配Key1.1和Key2.1，第二次匹配Key1.1和Key2.2以及Key1.2和Key2.1，......，第P次匹配Key1.1和Key2.P；匹配Key1.2和Key2.P-1；......；匹配Key1.P和Key2.1。如此达到并行比较Key值的效果，这样将比较的时间复杂度由O(mn)降低到O(m+n)。其具体的比较过程参见参考资料[4]中的Fig.6。比较器阵列的输出为short read ID，seed在short read中的位置，seed在reference genome中的位置。
 >

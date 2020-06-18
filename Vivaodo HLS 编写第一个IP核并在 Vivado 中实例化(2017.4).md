@@ -19,27 +19,27 @@ Xilinx Vivado~®~ 高层次综合(*High Level Synthesis*)工具将C语言转换�
 
 ## 1、新建第一个project。
 
-![点击create new project后出现的对话框](./img/5791357-68bebff0d26c8d4b.png?raw=true)
+![点击create new project后出现的对话框](https://github.com/edger330/My_blog/tree/master/img/5791357-68bebff0d26c8d4b.png?raw=true)
 
 按照图中配置后点击next，将出现 :
 
-![添加文件对话框](./img/5791357-cb28bedd16d2ee06.png?raw=true)
+![添加文件对话框](https://github.com/edger330/My_blog/tree/master/img/5791357-cb28bedd16d2ee06.png?raw=true)
 
 这里可以先添加文件，也可以选择直接next。**如果选择next在Vivado HLS中编辑C源文件后要记得添加Top Function**。这里演示先添加源文件的方法 :
 
-![添加C源文件](./img/5791357-6813f2243737d0bc.png?raw=true)
+![添加C源文件](https://github.com/edger330/My_blog/tree/master/img/5791357-6813f2243737d0bc.png?raw=true)
 
 先点击Add File添加源文件(包含.cpp和.h)，添加完成后，点击Top Function后的Browser按钮，即可弹出Select Top Function的对话框，这里我们的Top Function是hier_func.cpp，点击ok，然后点击next。
 
-![添加C-testbench](./img/5791357-3d168cdba139dc42.png?raw=true)
+![添加C-testbench](https://github.com/edger330/My_blog/tree/master/img/5791357-3d168cdba139dc42.png?raw=true)
 
 可以在这里添加C-testbench也可以直接点击next在之后再添加testbench，我在这里直接点击next。然后出现如下对话框 :
 
-![选择器件](./img/5791357-24ee626b80a73814.png?raw=true)
+![选择器件](https://github.com/edger330/My_blog/tree/master/img/5791357-24ee626b80a73814.png?raw=true)
 
 在这里是提醒我们选择器件，点击part后面的...按钮，则会出现 :
 
-![器件型号选择](./img/5791357-9e0a765d8cb773b5.png?raw=true)
+![器件型号选择](https://github.com/edger330/My_blog/tree/master/img/5791357-9e0a765d8cb773b5.png?raw=true)
 
 这里可以在左边的part里选择FPGA芯片具体型号，也可以在右边选择开发板型号，我选择的是ZYNQ-7 ZC702开发板，点击ok继续，点击finish。
 
@@ -198,7 +198,7 @@ Xilinx Vivado~®~ 高层次综合(*High Level Synthesis*)工具将C语言转换�
 
 从上述testbench中我们可以看出，在进行仿真是我们还需要加入4个文件，分别是inA.txt，inB.txt，outC.txt，outD.txt，其中inA和inB作为输入的测试数据，outC和outD作为inA和inB输入后应该得到的标准输出结果。输入数据用space或者enter隔开即可，这四个文件可以按照下图放置 :
 
-![test file 放置位置](./img/5791357-7250a3b595b733ff.png?raw=true)
+![test file 放置位置](https://github.com/edger330/My_blog/tree/master/img/5791357-7250a3b595b733ff.png?raw=true)
 
 --------
 
@@ -206,11 +206,11 @@ Xilinx Vivado~®~ 高层次综合(*High Level Synthesis*)工具将C语言转换�
 
 点击Run Synthesis(*图中绿色三角形*)
 
-![点击C综合按钮](./img/5791357-a3657d5d79763d1e.png?raw=true)
+![点击C综合按钮](https://github.com/edger330/My_blog/tree/master/img/5791357-a3657d5d79763d1e.png?raw=true)
 
 之后在左侧选项卡中会出现impl和syn文件夹 :
 
-![synthesis得到的文件](./img/5791357-008ba708e58cea02.png?raw=true)
+![synthesis得到的文件](https://github.com/edger330/My_blog/tree/master/img/5791357-008ba708e58cea02.png?raw=true)
 
 在impl文件夹下或者syn文件夹下的verilog文件夹下会生成.v文件，在vhdl文件夹下会生成.vhd文件。这里以.v文件进行分析，生成的.v文件如下 :
 
@@ -314,11 +314,11 @@ Xilinx Vivado~®~ 高层次综合(*High Level Synthesis*)工具将C语言转换�
 
 点击Run C SImulation 按钮(*绿色三角形左边的按钮*)
 
-![Run C SImulation 按钮](./img/5791357-88fd0e2911df66ff.png?raw=true)
+![Run C SImulation 按钮](https://github.com/edger330/My_blog/tree/master/img/5791357-88fd0e2911df66ff.png?raw=true)
 
 出现下图对话框，直接选择ok，这里主要选择仿真选项和配置argument，没有特殊需要直接选择ok即可。
 
-![C SImulation configuration](./img/5791357-a0b28cf3d0f2c87f.png?raw=true)
+![C SImulation configuration](https://github.com/edger330/My_blog/tree/master/img/5791357-a0b28cf3d0f2c87f.png?raw=true)
 
 仿真结束后，则会弹出 : hier_func_csim.log，其内容为 :
 
@@ -341,37 +341,37 @@ Xilinx Vivado~®~ 高层次综合(*High Level Synthesis*)工具将C语言转换�
 
 点击下图中的Export 按钮，
 
-![Export 按钮](./img/5791357-9ec56536cef3b5da.png?raw=true)
+![Export 按钮](https://github.com/edger330/My_blog/tree/master/img/5791357-9ec56536cef3b5da.png?raw=true)
 
 则会弹出下图对话框 :
 
-![Export RTL 对话框](./img/5791357-b19f9a0a77328f47.png?raw=true)
+![Export RTL 对话框](https://github.com/edger330/My_blog/tree/master/img/5791357-b19f9a0a77328f47.png?raw=true)
 
 按照需求配置后点击ok，Export完成后，则会弹出 :
 
-![Export Report](./img/5791357-a07ec39389c3aa4b.png?raw=true)
+![Export Report](https://github.com/edger330/My_blog/tree/master/img/5791357-a07ec39389c3aa4b.png?raw=true)
 
 这个时候我们发现在solution/impl/ip目录下生成了一个.zip文件 :
 
-![zip 文件](./img/5791357-d6ede2901974c807.png?raw=true)
+![zip 文件](https://github.com/edger330/My_blog/tree/master/img/5791357-d6ede2901974c807.png?raw=true)
 
 这个zip就是之后导入时需要用到的文件，现在我们打开Vivado 2017.4，新建一个Project，**在选择器件型号时记得选择与HLS中相同的器件型号。**
 
-![New Project Summary](./img/5791357-956797688c2b5ce3.png?raw=true)
+![New Project Summary](https://github.com/edger330/My_blog/tree/master/img/5791357-956797688c2b5ce3.png?raw=true)
 
 点击Finish，完成新建工程之后，点击界面左侧的Settings :
 
-![](./img/5791357-5c83268f77615fa9.png?raw=true)
+![](https://github.com/edger330/My_blog/tree/master/img/5791357-5c83268f77615fa9.png?raw=true)
 
 在弹出的页面下添加IP repositories。(*添加路径为在HLS工程中的/solution1/impl/ip*)
 
-![添加ip](./img/5791357-faa13c32749d59d3.png?raw=true)
+![添加ip](https://github.com/edger330/My_blog/tree/master/img/5791357-faa13c32749d59d3.png?raw=true)
 
 之后在Block Design中就可以添加IP了 :
 
-![](./img/5791357-78bb103aa7db0536.png?raw=true)
+![](https://github.com/edger330/My_blog/tree/master/img/5791357-78bb103aa7db0536.png?raw=true)
 
-![](./img/5791357-de64d64e2dd08e98.png?raw=true)
+![](https://github.com/edger330/My_blog/tree/master/img/5791357-de64d64e2dd08e98.png?raw=true)
 
 -------
 

@@ -3,11 +3,11 @@
 
 ## 1.1空位权值恒定模型算法
 
-![空位权值恒定模型算法](./img/5791357-1047eb2e05f5712c.png?raw=true)
+![空位权值恒定模型算法](https://github.com/edger330/My_blog/tree/master/img/5791357-1047eb2e05f5712c.png?raw=true)
 
 ## 1.2通用算法
 
-![通用模型算法](./img/5791357-df98a12a770d659e.png?raw=true)
+![通用模型算法](https://github.com/edger330/My_blog/tree/master/img/5791357-df98a12a770d659e.png?raw=true)
 
 其中H(i,j)是最终的得分矩阵。F(i,j)和E(i,j)矩阵分别用来存储在两条比对序列上开辟空位延伸比对的消耗(cost)。o代表第一个空位的罚分值，e代表延伸时的罚分值。
 ***(原文内容：In (3) and (4), o denotes the gap opening penalty, while e represents the gap extension penalty. The matrices F(i, j) and E(i, j) contain the trace of opening and extending a gap, respectively. F(i, j) stores the cost for opening a gap and extending a gap on sequence x, while E(i, j) stores the cost for opening a gap and extending a gap on sequence y)***

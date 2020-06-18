@@ -14,26 +14,26 @@
 
 先用cue splitter将整个的ape文件转化成wav文件
 
-![将APE转换为WAVE](./img/5791357-c3b295babeabae89.png?raw=true)
+![将APE转换为WAVE](https://github.com/edger330/My_blog/tree/master/img/5791357-c3b295babeabae89.png?raw=true)
 
 
 ## 第二步
 
 转化完成后，你将会得到wav
 
-![wav及原ape源文件](./img/5791357-08090c8a64a75321.png?raw=true)
+![wav及原ape源文件](https://github.com/edger330/My_blog/tree/master/img/5791357-08090c8a64a75321.png?raw=true)
 
 这个时候我们打开.cue文件，用记事本，sublime都可以
 
-![打开的.cue文件的内容](./img/5791357-038b9691038f1bca.png?raw=true)
+![打开的.cue文件的内容](https://github.com/edger330/My_blog/tree/master/img/5791357-038b9691038f1bca.png?raw=true)
 
 我们关注开头是FILE的那一行
 
-![file](./img/5791357-e6bd09f0e7f85bed.png?raw=true)
+![file](https://github.com/edger330/My_blog/tree/master/img/5791357-e6bd09f0e7f85bed.png?raw=true)
 
 不难推测，这是分轨的输入文件，这个时候我们把这个文件的后缀名改为.wav，保存。再用cue splitter打开.cue文件进行分轨，我们就可以得到全为.wav的音乐格式了，也可以在foobar2000上播放了。
 
-![大功告成](./img/5791357-8200cb06957487d4.png?raw=true)
+![大功告成](https://github.com/edger330/My_blog/tree/master/img/5791357-8200cb06957487d4.png?raw=true)
 
 希望对爱好音乐的朋友有帮助！
 
